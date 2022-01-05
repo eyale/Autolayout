@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Autolayout5 View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Autolayout5View" id="Y6W-OH-hqX" customClass="Autolayout5View" customModule="clawee_ios_ui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwi-CG-43e" userLabel="Red">
+                                <rect key="frame" x="0.0" y="64" width="414" height="778"/>
+                                <color key="backgroundColor" red="0.65426036799065423" green="0.16132664229810209" blue="0.16401122674504393" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shV-CL-PZd" userLabel="Yellow">
+                                <rect key="frame" x="0.0" y="64" width="250" height="778"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="iUB-fR-Keu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpJ-Of-pIE" userLabel="Green">
+                                <rect key="frame" x="258" y="64" width="156" height="778"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PUS-Gd-zUc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PUS-Gd-zUc" firstAttribute="bottom" secondItem="shV-CL-PZd" secondAttribute="bottom" constant="20" id="0mc-HX-j2s"/>
+                            <constraint firstItem="YpJ-Of-pIE" firstAttribute="leading" secondItem="shV-CL-PZd" secondAttribute="trailing" constant="8" id="3Vm-s6-1Kx"/>
+                            <constraint firstItem="qwi-CG-43e" firstAttribute="top" secondItem="PUS-Gd-zUc" secondAttribute="top" constant="20" id="4DY-fU-8xf"/>
+                            <constraint firstItem="PUS-Gd-zUc" firstAttribute="bottom" secondItem="qwi-CG-43e" secondAttribute="bottom" constant="20" id="CJ7-qT-RXW"/>
+                            <constraint firstItem="PUS-Gd-zUc" firstAttribute="trailing" secondItem="YpJ-Of-pIE" secondAttribute="trailing" id="eYj-hp-ApB"/>
+                            <constraint firstItem="YpJ-Of-pIE" firstAttribute="width" secondItem="shV-CL-PZd" secondAttribute="width" multiplier="3" priority="750" id="eau-Ya-P2U"/>
+                            <constraint firstItem="YpJ-Of-pIE" firstAttribute="top" secondItem="PUS-Gd-zUc" secondAttribute="top" constant="20" id="g1o-go-jMg"/>
+                            <constraint firstItem="shV-CL-PZd" firstAttribute="leading" secondItem="PUS-Gd-zUc" secondAttribute="leading" id="hGL-Z9-kSp"/>
+                            <constraint firstItem="PUS-Gd-zUc" firstAttribute="trailing" secondItem="qwi-CG-43e" secondAttribute="trailing" id="iCH-zM-kwD"/>
+                            <constraint firstItem="PUS-Gd-zUc" firstAttribute="bottom" secondItem="YpJ-Of-pIE" secondAttribute="bottom" constant="20" id="o7O-tb-jwp"/>
+                            <constraint firstItem="shV-CL-PZd" firstAttribute="top" secondItem="PUS-Gd-zUc" secondAttribute="top" constant="20" id="qib-At-gKD"/>
+                            <constraint firstItem="qwi-CG-43e" firstAttribute="leading" secondItem="PUS-Gd-zUc" secondAttribute="leading" id="tDC-po-vhA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

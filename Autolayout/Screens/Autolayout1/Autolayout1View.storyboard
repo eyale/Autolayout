@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Autolayout1-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Autolayout1View" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" userLabel="Autolayout1" customClass="Autolayout1View" customModule="clawee_ios_ui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-40-9XN" userLabel="red">
+                                <rect key="frame" x="20" y="80" width="372.5" height="980"/>
+                                <color key="backgroundColor" red="1" green="0.63682523027003346" blue="0.75055509291288569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vh3-8u-Wko" userLabel="violet">
+                                <rect key="frame" x="400.5" y="80" width="389.5" height="980"/>
+                                <color key="backgroundColor" red="0.94866667539526328" green="0.75153965672600198" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2K-1B-Fze">
+                                <rect key="frame" x="145" y="100" width="520" height="426.5"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vo5-UD-rmk"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vh3-8u-Wko" secondAttribute="trailing" constant="20" id="4rD-X2-h9c"/>
+                            <constraint firstItem="Vh3-8u-Wko" firstAttribute="leading" secondItem="LQe-40-9XN" secondAttribute="trailing" constant="8" id="FAT-F1-hU9"/>
+                            <constraint firstItem="Vh3-8u-Wko" firstAttribute="top" secondItem="LQe-40-9XN" secondAttribute="top" id="Khc-Qu-MtK"/>
+                            <constraint firstItem="Vh3-8u-Wko" firstAttribute="bottom" secondItem="LQe-40-9XN" secondAttribute="bottom" id="VPC-vt-ZVw"/>
+                            <constraint firstItem="b2K-1B-Fze" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="20" id="XE9-Lt-erf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b2K-1B-Fze" secondAttribute="trailing" constant="20" id="c9L-s4-wff"/>
+                            <constraint firstItem="b2K-1B-Fze" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="100" id="eCD-A8-etV"/>
+                            <constraint firstItem="Vh3-8u-Wko" firstAttribute="width" secondItem="LQe-40-9XN" secondAttribute="width" multiplier="1.04469" id="hF3-X0-6hJ"/>
+                            <constraint firstItem="LQe-40-9XN" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="80" id="ujx-4F-UK1"/>
+                            <constraint firstItem="LQe-40-9XN" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="xTv-h4-SOx"/>
+                            <constraint firstAttribute="bottom" secondItem="LQe-40-9XN" secondAttribute="bottom" constant="20" id="zTu-dF-2cc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.333333333333329" y="99.259259259259252"/>
+        </scene>
+    </scenes>
+</document>

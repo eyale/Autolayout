@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Autolayout4 View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Autolayout4View" id="Y6W-OH-hqX" customClass="Autolayout4View" customModule="clawee_ios_ui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rp8-XC-ytI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXa-Hh-S2B" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YuN-8G-Bfe">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pL8-5Y-fPf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Add Item"/>
+                                                        <connections>
+                                                            <action selector="addEntryWithSender:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CCY-xp-pED"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YuN-8G-Bfe" firstAttribute="leading" secondItem="WXa-Hh-S2B" secondAttribute="leading" id="6CI-LU-jQo"/>
+                                            <constraint firstAttribute="bottom" secondItem="YuN-8G-Bfe" secondAttribute="bottom" id="M0H-xn-mKB"/>
+                                            <constraint firstAttribute="trailing" secondItem="YuN-8G-Bfe" secondAttribute="trailing" id="oZQ-9y-795"/>
+                                            <constraint firstItem="YuN-8G-Bfe" firstAttribute="top" secondItem="WXa-Hh-S2B" secondAttribute="top" id="si7-r4-Nfe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WXa-Hh-S2B" firstAttribute="leading" secondItem="DJM-cl-rBd" secondAttribute="leading" id="3XP-fG-bgB"/>
+                                    <constraint firstItem="WXa-Hh-S2B" firstAttribute="trailing" secondItem="DJM-cl-rBd" secondAttribute="trailing" id="cpC-f2-zhq"/>
+                                    <constraint firstItem="WXa-Hh-S2B" firstAttribute="bottom" secondItem="DJM-cl-rBd" secondAttribute="bottom" id="d8P-Wh-2M9"/>
+                                    <constraint firstItem="DJM-cl-rBd" firstAttribute="top" secondItem="WXa-Hh-S2B" secondAttribute="top" id="fMD-ZP-wVC"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="DJM-cl-rBd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="15w-vS-XDh"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rp8-XC-ytI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Da6-bg-Edw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rp8-XC-ytI" secondAttribute="trailing" id="QnY-Hi-Tbw"/>
+                            <constraint firstItem="rp8-XC-ytI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XbL-WX-z5m"/>
+                            <constraint firstItem="WXa-Hh-S2B" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="nxK-Np-7Rg"/>
+                            <constraint firstItem="rp8-XC-ytI" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="yU8-bI-VJS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="rp8-XC-ytI" id="fmj-Qh-S5i"/>
+                        <outlet property="stackVew" destination="YuN-8G-Bfe" id="Y6F-L4-TaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.8985507246376816" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
